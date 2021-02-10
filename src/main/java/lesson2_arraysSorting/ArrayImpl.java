@@ -150,7 +150,7 @@ public class ArrayImpl<E extends Comparable<? super E>> implements Array<E> {
         }
     }
 
-    // !*!*! важный алгоритм перестановки элемментов
+    // !*!*! важный алгоритм перестановки элемментов, такое встречается на собеседованиях
     private void swap(int indexA, int indexB) {
         E temp = data[indexA]; // третья вспомогательная переменная
         data[indexA] = data[indexB];
