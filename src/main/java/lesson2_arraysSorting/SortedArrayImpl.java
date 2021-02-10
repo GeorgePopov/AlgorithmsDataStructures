@@ -6,7 +6,9 @@ package lesson2_arraysSorting;
  классе мы можем реализовывать данный интерфейс по своему. Integer реализуем данный интерфейс
  см. 1:50мин
  */
-public class SortedArrayImpl<E extends Comparable<? super E>> extends ArrayImpl<E> { // ??
+// <E extends Comparable<? super E>> любые родительские классы Е реализуемые интерфейс Comparable нам подходят
+// т.е. текущий объект и все его родиельские классы
+public class SortedArrayImpl<E extends Comparable<? super E>> extends ArrayImpl<E> {
 
     public SortedArrayImpl() {
         this(DEFAULT_CAPACITY);
