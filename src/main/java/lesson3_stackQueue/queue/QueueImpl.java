@@ -6,14 +6,14 @@ package lesson3_stackQueue.queue;
  */
 public class QueueImpl<E> implements IQueue<E> { // Iинтерфейс, так можно обозначать интерфейсы
 
-    private static final int DEFAULT_HEAD = 0;
-    private static final int DEFAULT_TAIL = -1;
+    protected static final int DEFAULT_HEAD = 0;
+    protected static final int DEFAULT_TAIL = -1;
 
     protected final E[] data;
     protected int size;
 
-    private int tail;
-    private int head;
+    protected int tail;
+    protected int head;
 
     @SuppressWarnings("unchecked")
     public QueueImpl(int maxSize) {
