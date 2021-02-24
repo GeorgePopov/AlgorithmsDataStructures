@@ -44,10 +44,10 @@ public class ConcurrencyMainDZ {
 
         // Example 1 ----------
         /**
-         создаём список List с обобщением <Runnable>, и заполняем его тремя методами measureTime(), типа Runnable.
+         создаём список Link с обобщением <Runnable>, и заполняем его тремя методами measureTime(), типа Runnable.
          ! так можно сделать три экземпляра класса, запустить у них какие-то методы и запустить их в разных потоках.
          */ // это последовательный вариант
-        List<Runnable> tasks = List.of( // List.of создаёт и формирует коллекцию одновременно
+        List<Runnable> tasks = List.of( // Link.of создаёт и формирует коллекцию одновременно
                 // example 1
                 measureTime(new Runnable() {
                     @Override

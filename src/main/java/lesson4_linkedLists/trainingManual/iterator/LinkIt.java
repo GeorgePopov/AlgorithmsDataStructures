@@ -13,7 +13,7 @@ public class LinkIt {
     }
 
     public void display(){
-        System.out.println("Name: "+this.name+", age: "+this.age);
+        System.out.println("Name: " +this.name+ ", age: " +this.age);
     }
 }
 
@@ -126,9 +126,7 @@ class LinkedIteratorApp {
         LinkIterator itr = new LinkIterator(list);
 
         itr.insertAfter("Sam", 20);
-        itr.insertAfter("Bob", 30);
         itr.insertBefore("George", 25);
-        itr.deleteCurrent();
 
         list.display();
     }

@@ -2,7 +2,7 @@ package lesson2_arraysSorting;
 
 import java.util.Arrays;
 /*
- Array List эфективен:
+ Array Link эфективен:
  * когда нужно найти эл-нт с известным индексом.
  * добавить эл-ты
  не эфективен:

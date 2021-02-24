@@ -21,18 +21,18 @@ public class SortedArrayImpl<E extends Comparable<? super E>> extends ArrayImpl<
 
     @Override
     public int indexOF(E value) {
-        int low = 0;
-        int high = size - 1;
+        int low = 0; // самый крайний левый индекс
+        int high = size - 1; // самый крайний правый индекс
 
         while (low <= high) {
             int mid = (low + high) / 2;
-            if (data[mid].equals(value)) {
+            if (data[mid].equals(value)) { // если находим средний эл-нт выходим из цикла
                 return mid;
             } else if (value.compareTo(data[mid]) > 0) {
-                low = mid + 1;
+                low = mid + 1; // если искомый эл-нт больше того что мы ищем, изменяем левую границу и  рассматриваем все элементы правее
             } else {
-                high = mid - 1;
-            }
+                high = mid - 1; // иначе изменяем правую границу и рассматриваем все эл-ты которые слева
+            } // и так на каждой операции уменьшаем диапазон рассматриваемых эл-тов
         }
 
         return -1;
