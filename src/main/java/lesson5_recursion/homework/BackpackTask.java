@@ -12,7 +12,8 @@ public class BackpackTask {
         list.add(new Things("Laptop", 5, 500));
         list.add(new Things("Bowler", 7, 20));
 
-
+        Backpack backpack = new Backpack();
+        backpack.addInBackpack(list);
 
     }
 }

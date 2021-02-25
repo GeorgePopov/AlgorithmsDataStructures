@@ -8,7 +8,7 @@ public class TaskOne {
         System.out.println("Отрицательное число в степени 0 = " + raisingNumberToPower(-8, 0));
         System.out.println("Число в степени = " + raisingNumberToPower(5, 5));
         System.out.println("Отрицательное число в степени = " + raisingNumberToPower(-3, 3));
-        System.out.println("Exception: " + raisingPositiveNumberToPower(-4, 4));
+        System.out.println("Exception" + raisingPositiveNumberToPower(-4, 4));
     }
 
     private static double raisingNumberToPower(double number, double power) {
